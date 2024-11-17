@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Interface</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+
+    <!-- Header with title -->
+    <header>
+        <h1>Smart Home Interface</h1>
+    </header>
+
+    <!-- Main section for controls -->
+    <main>
+        
+        <!-- Lighting Control Section -->
+        <section id="lighting-control">
+            <h2><i class="fas fa-lightbulb"></i> Lighting Control</h2>
+            <!-- Lighting toggle switch -->
+            <label class="switch">
+                <input type="checkbox" id="lightSwitch" onclick="toggleLights()">
+                <span class="slider"></span>
+            </label>
+        </section>
+
+        <!-- Temperature Control Section -->
+        <section id="temperature-control">
+            <h2><i class="fas fa-thermometer-half"></i> Temperature Control</h2>
+            <!-- Temperature display -->
+            <div id="temperature-display">78°F</div>
+            <button onclick="adjustTemperature('up')"><i class="fas fa-arrow-up"></i> Increase Temp</button>
+            <button onclick="adjustTemperature('down')"><i class="fas fa-arrow-down"></i> Decrease Temp</button>
+        </section>
+
+        <!-- Music Control Section -->
+        <section id="music-control">
+            <h2><i class="fas fa-music"></i> Music Control</h2>
+            <!-- Display for the current song -->
+            <div id="song-display">Click Play to start a song</div>
+            <button onclick="playPauseMusic()"><i class="fas fa-play"></i> Play/Pause</button>
+            <button onclick="stopMusic()"><i class="fas fa-stop"></i> Stop</button>
+            <button onclick="nextSong()"><i class="fas fa-forward"></i> Next</button>
+        </section>
+
+    </main>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

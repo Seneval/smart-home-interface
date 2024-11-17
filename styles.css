@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #28074a, #491088); /* Background gradient */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff19db;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Section Styles */
+section {
+    background: #6c1dd0; /* Section background color */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.4em;
+    color: #ff7f1a; /* Header text color */
+    margin-bottom: 15px;
+}
+
+/* Temperature Display Styles */
+#temperature-display {
+    font-size: 2em;
+    color: #ff7f1a; /* Color for temperature display */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Song Display Styles */
+#song-display {
+    font-size: 1.2em;
+    color: #ff7f1a;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(to right, #bd4de5, #ff19db); /* Button gradient */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 5px 0;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); /* Button shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Button glow effect on click */
+button:active {
+    box-shadow: 0px 0px 15px 10px rgba(255, 127, 26, 0.6); /* Soft glow effect */
+}
+
+/* Custom Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #bd4de5; /* Toggle background color when off */
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #ff19db; /* Toggle background color when on */
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    #temperature-display {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
