@@ -2,18 +2,18 @@
     "name": "Smart Home Interface",
     "short_name": "SmartHome",
     "description": "A Smart Home Controller Interface",
-    "start_url": "/smarthome/",
+    "start_url": "/smart-home-interface/",
     "display": "standalone",
     "background_color": "#28074a",
     "theme_color": "#6c1dd0",
     "icons": [
       {
-        "src": "/smarthome/icons/icon-192x192.png",
+        "src": "/smart-home-interface/icons/icon-192x192.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/smarthome/icons/icon-512x512.png",
+        "src": "/smart-home-interface/icons/icon-512x512.png",
         "sizes": "512x512",
         "type": "image/png"
       }

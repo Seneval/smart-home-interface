@@ -1,12 +1,12 @@
 const CACHE_NAME = "smarthome-cache-v1";
 const urlsToCache = [
-  "/smarthome/",
-  "/smarthome/index.html",
-  "/smarthome/styles.css",
-  "/smarthome/script.js",
-  "/smarthome/manifest.json",
-  "/smarthome/icons/icon-192x192.png",
-  "/smarthome/icons/icon-512x512.png"
+  "/smart-home-interface/",
+  "/smart-home-interface/index.html",
+  "/smart-home-interface/styles.css",
+  "/smart-home-interface/script.js",
+  "/smart-home-interface/manifest.json",
+  "/smart-home-interface/icons/icon-192x192.png",
+  "/smart-home-interface/icons/icon-512x512.png"
 ];
 
 // Install service worker and cache resources
